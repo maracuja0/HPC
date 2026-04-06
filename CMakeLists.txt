@@ -8,6 +8,7 @@ find_package(CUDAToolkit REQUIRED)
 set(CMAKE_CUDA_ARCHITECTURES 89)
 
 add_subdirectory(MatMul)
+add_subdirectory(VectorSum)
 
 message(STATUS "CUDA Toolkit version: ${CUDAToolkit_VERSION}")
 message(STATUS "CUDA include directories: ${CUDAToolkit_INCLUDE_DIRS}")
