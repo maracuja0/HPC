@@ -3,12 +3,13 @@ project(HPC LANGUAGES CXX CUDA)
 
 set(CMAKE_CXX_STANDARD 17)
 
-enable_language(CUDA)
+#enable_language(CUDA)
 find_package(CUDAToolkit REQUIRED)
 set(CMAKE_CUDA_ARCHITECTURES 89)
 
 add_subdirectory(MatMul)
 add_subdirectory(VectorSum)
+add_subdirectory(GeneticAlg)
 
 message(STATUS "CUDA Toolkit version: ${CUDAToolkit_VERSION}")
 message(STATUS "CUDA include directories: ${CUDAToolkit_INCLUDE_DIRS}")
